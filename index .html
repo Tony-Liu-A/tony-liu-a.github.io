@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Visual | Architectural Visualization</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #000;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+            transition: opacity 0.3s;
+        }
+        nav a:hover {
+            opacity: 0.7;
+        }
+        #langToggle {
+            background: white;
+            color: black;
+            border: none;
+            padding: 0.4rem 0.9rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero-image.jpg') center/cover no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 5%;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: black;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #ddd;
+        }
+        .portfolio {
+            padding: 5rem 5%;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background: #f9f9f9;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .project-info {
+            padding: 1.5rem;
+        }
+        .about {
+            padding: 5rem 5%;
+            background: #f0f0f0;
+        }
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .contact {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Studio Visual</div>
+    <nav>
+        <a href="#portfolio" class="lang-en">Portfolio</a>
+        <a href="#portfolio" class="lang-cn" style="display:none;">作品集</a>
+        
+        <a href="#about" class="lang-en">About</a>
+        <a href="#about" class="lang-cn" style="display:none;">关于我们</a>
+        
+        <a href="#contact" class="lang-en">Contact</a>
+        <a href="#contact" class="lang-cn" style="display:none;">联系我们</a>
+        
+        <button id="langToggle">中文</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1 class="lang-en">Architectural Visualization & 3D Rendering</h1>
+    <h1 class="lang-cn" style="display:none;">建筑可视化与3D渲染</h1>
+
+    <p class="lang-en">We bring your architectural concepts to life with photorealistic renders, immersive animations, and stunning visual storytelling.</p>
+    <p class="lang-cn" style="display:none;">我们通过超写实效果图、沉浸式动画与视觉表现，让您的建筑设计栩栩如生。</p>
+
+    <a href="#portfolio" class="btn lang-en">View Our Work</a>
+    <a href="#portfolio" class="btn lang-cn" style="display:none;">查看作品</a>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <h2 class="section-title lang-en">Our Projects</h2>
+    <h2 class="section-title lang-cn" style="display:none;">我们的项目</h2>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="island-resort.jpg" alt="Island Resort">
+            <div class="project-info">
+                <h3 class="lang-en">Island Luxury Resort</h3>
+                <h3 class="lang-cn" style="display:none;">海岛豪华度假村</h3>
+                <p class="lang-en">Aerial visualization of a high-end island resort development.</p>
+                <p class="lang-cn" style="display:none;">高端海岛度假村鸟瞰效果图。</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="waterfront-cultural.jpg" alt="Waterfront Building">
+            <div class="project-info">
+                <h3 class="lang-en">Waterfront Cultural Center</h3>
+                <h3 class="lang-cn" style="display:none;">滨水文化中心</h3>
+                <p class="lang-en">Modern waterfront architecture with fluid design and serene environment.</p>
+                <p class="lang-cn" style="display:none;">现代滨水建筑，流线设计与宁静环境。</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="retail-mall.jpg" alt="Retail Mall">
+            <div class="project-info">
+                <h3 class="lang-en">Luxury Retail Mall</h3>
+                <h3 class="lang-cn" style="display:none;">高端商业购物中心</h3>
+                <p class="lang-en">Vibrant open-air shopping center with premium brand spaces.</p>
+                <p class="lang-cn" style="display:none;">活力开放式购物中心，高端品牌空间。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2 class="lang-en">About Our Studio</h2>
+            <h2 class="lang-cn" style="display:none;">关于我们工作室</h2>
+            <p class="lang-en">We are a professional architectural visualization studio providing high-quality 3D renders for clients worldwide.</p>
+            <p class="lang-cn" style="display:none;">我们是专业的建筑可视化工作室，为全球客户提供高品质3D效果图。</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title lang-en">Get In Touch</h2>
+    <h2 class="section-title lang-cn" style="display:none;">联系我们</h2>
+    <p class="lang-en">Ready to bring your project to life? Let's discuss your visualization needs.</p>
+    <p class="lang-cn" style="display:none;">准备让您的项目落地？让我们聊聊您的可视化需求。</p>
+</section>
+
+<footer>
+    <p class="lang-en">&copy; 2026 Studio Visual. All rights reserved.</p>
+    <p class="lang-cn" style="display:none;">&copy; 2026 Studio Visual 版权所有</p>
+</footer>
+
+<script>
+    const toggle = document.getElementById('langToggle');
+    const en = document.querySelectorAll('.lang-en');
+    const cn = document.querySelectorAll('.lang-cn');
+    let isEn = true;
+
+    toggle.addEventListener('click', () => {
+        if (isEn) {
+            en.forEach(i => i.style.display = 'none');
+            cn.forEach(i => i.style.display = 'block');
+            toggle.innerText = 'English';
+        } else {
+            en.forEach(i => i.style.display = 'block');
+            cn.forEach(i => i.style.display = 'none');
+            toggle.innerText = '中文';
+        }
+        isEn = !isEn;
+    });
+</script>
+
+</body>
+</html>
