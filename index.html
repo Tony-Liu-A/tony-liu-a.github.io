@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Visual | Architectural Visualization & 3D Rendering</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Header */
+        header {
+            background: #000;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: opacity 0.3s;
+        }
+        nav a:hover {
+            opacity: 0.7;
+        }
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero-image.jpg') center/cover no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 5%;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: black;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #ddd;
+        }
+        /* Portfolio Section */
+        .portfolio {
+            padding: 5rem 5%;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background: #f9f9f9;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .project-info {
+            padding: 1.5rem;
+        }
+        .project-info h3 {
+            margin-bottom: 0.5rem;
+        }
+        /* About Section */
+        .about {
+            padding: 5rem 5%;
+            background: #f0f0f0;
+        }
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .about-text h2 {
+            margin-bottom: 1rem;
+        }
+        /* Contact Section */
+        .contact {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        .contact-info {
+            margin-top: 2rem;
+        }
+        /* Footer */
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Studio Visual</div>
+        <nav>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Architectural Visualization & 3D Rendering</h1>
+        <p>We bring your architectural concepts to life with photorealistic renders, immersive animations, and stunning visual storytelling.</p>
+        <a href="#portfolio" class="btn">View Our Work</a>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Our Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1: Island Resort -->
+            <div class="project-card">
+                <img src="island-resort.jpg" alt="Island Resort Aerial Visualization">
+                <div class="project-info">
+                    <h3>Island Luxury Resort Masterplan</h3>
+                    <p>Aerial visualization of a high-end island resort development, showcasing the masterplan, beachfront villas, and integrated landscape design.</p>
+                </div>
+            </div>
+
+            <!-- Project 2: Waterfront Cultural Center -->
+            <div class="project-card">
+                <img src="waterfront-cultural.jpg" alt="Waterfront Cultural Center Render">
+                <div class="project-info">
+                    <h3>Waterfront Cultural Center</h3>
+                    <p>Twilight render of a modern waterfront cultural building, highlighting the fluid architectural form and the serene riverside environment.</p>
+                </div>
+            </div>
+
+            <!-- Project 3: Luxury Retail Mall -->
+            <div class="project-card">
+                <img src="retail-mall.jpg" alt="Luxury Retail Mall Interior">
+                <div class="project-info">
+                    <h3>Open-Air Luxury Retail Mall</h3>
+                    <p>Vibrant visualization of an open-air shopping center, featuring high-end brand facades, pedestrian zones, and lively commercial atmosphere.</p>
+                </div>
+            </div>
+
+            <!-- Project 4: Industrial & Tech Park -->
+            <div class="project-card">
+                <img src="industrial-park.jpg" alt="Industrial Tech Park Aerial">
+                <div class="project-info">
+                    <h3>Eco-Friendly Industrial Tech Park</h3>
+                    <p>Aerial visualization of a sustainable industrial park, showcasing modern factory buildings, green spaces, and optimized site circulation.</p>
+                </div>
+            </div>
+
+            <!-- Project 5: Luxury Residential Towers -->
+            <div class="project-card">
+                <img src="residential-towers.jpg" alt="Luxury Residential Towers Render">
+                <div class="project-info">
+                    <h3>Premium Residential Towers</h3>
+                    <p>High-rise luxury residential complex visualization, featuring contemporary tower design, heritage-style low-rise elements, and urban skyline views.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Our Studio</h2>
+                <p>We are a specialized architectural visualization studio with years of experience creating high-quality 3D renders, animations, and interactive presentations for architects, developers, and real estate agencies worldwide.</p>
+                <p>From conceptual masterplans to photorealistic interior renders, we combine technical precision with artistic vision to deliver visuals that help you communicate your design ideas effectively.</p>
+            </div>
+            <div class="about-image">
+                <img src="studio-work.jpg" alt="Our Studio" style="width:100%; border-radius:8px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>Ready to bring your project to life? Let's discuss your visualization needs.</p>
+        <div class="contact-info">
+            <p>Email: hello@studiovisual.com</p>
+            <p>WhatsApp: +86 123 4567 8900</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Studio Visual. All rights reserved.</p>
+    </footer>
+</body>
+</html>
